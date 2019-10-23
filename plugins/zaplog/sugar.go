@@ -3,7 +3,7 @@ package zaplog
 import (
 	"context"
 	"fmt"
-	"github.com/xiaomeng79/go-log/tracer"
+	"github.com/mark-libn/go-log/tracer"
 	"go.uber.org/zap"
 )
 
@@ -87,9 +87,9 @@ func (l *Log) Fatalf(format string, args ...interface{}) {
 // 获取链路跟踪添加列
 func getTraceField(ctx context.Context) []zap.Field {
 	fm := tracer.GetTraceInfo(ctx)
-	zf := make([]zap.Field,0)
-	for k,v := range fm {
-		zf = append(zf,zap.String(k,v))
+	zf := make([]zap.Field, 0)
+	for k, v := range fm {
+		zf = append(zf, zap.String(k, v))
 	}
 	return zf
 }

@@ -3,10 +3,9 @@ package logrus
 import (
 	"context"
 	"fmt"
+	"github.com/mark-libn/go-log/tracer"
 	"github.com/sirupsen/logrus"
-	"github.com/xiaomeng79/go-log/tracer"
 )
-
 
 func getCtxFileds(llog *Log, args ...interface{}) *logrus.Entry {
 	//判断是否有context
@@ -92,8 +91,8 @@ func (l *Log) Fatalf(format string, args ...interface{}) {
 // 获取链路跟踪添加列
 func getTraceField(ctx context.Context) logrus.Fields {
 	fm := tracer.GetTraceInfo(ctx)
-	zf := make(logrus.Fields,0)
-	for k,v := range fm {
+	zf := make(logrus.Fields, 0)
+	for k, v := range fm {
 		zf[k] = v
 	}
 	return zf

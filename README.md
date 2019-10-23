@@ -8,7 +8,7 @@
 v1.0
 v2.0
 #### 获取
-    `go get -u github.com/xiaomeng79/go-log`
+    `go get -u github.com/mark-libn/go-log`
    
 
 ### 快速使用
@@ -19,7 +19,7 @@ v2.0
 
 ```
     //引入包
-    import "github.com/xiaomeng79/go-log"
+    import "github.com/mark-libn/go-log"
     
     //默认使用zap 插件
     log.Info("test")
@@ -72,8 +72,8 @@ ctx := context.WithValue(ctx,tracer.LogTraceKey,"46b1506e7332f7c1:7f75737aa70629
     	//初始化zap
     	//引入包
     	import (
-        	"github.com/xiaomeng79/go-log/conf"
-        	"github.com/xiaomeng79/go-log/plugins/zaplog"
+        	"github.com/mark-libn/go-log/conf"
+        	"github.com/mark-libn/go-log/plugins/zaplog"
         )
         //初始化
         SetLogger(zaplog.New(
@@ -93,8 +93,8 @@ ctx := context.WithValue(ctx,tracer.LogTraceKey,"46b1506e7332f7c1:7f75737aa70629
     	//初始化zap
     	//引入包
     	import (
-        	"github.com/xiaomeng79/go-log/conf"
-        	"github.com/xiaomeng79/go-log/plugins/logrus"
+        	"github.com/mark-libn/go-log/conf"
+        	"github.com/mark-libn/go-log/plugins/logrus"
         )
         //初始化
         SetLogger(logrus.New(
