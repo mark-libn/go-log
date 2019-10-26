@@ -3,7 +3,7 @@ package zaplog
 import (
 	"context"
 	"fmt"
-	"github.com/mark-libn/go-log/tracer"
+	"go-log/tracer"
 	"go.uber.org/zap"
 )
 

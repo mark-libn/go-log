@@ -3,8 +3,8 @@ package logrus
 import (
 	"context"
 	"fmt"
-	"github.com/mark-libn/go-log/tracer"
 	"github.com/sirupsen/logrus"
+	"go-log/tracer"
 )
 
 func getCtxFileds(llog *Log, args ...interface{}) *logrus.Entry {

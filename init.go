@@ -1,7 +1,7 @@
 package log
 
 import (
-	"github.com/mark-libn/go-log/plugins/zaplog"
+	"go-log/plugins/zaplog"
 )
 
 //默认

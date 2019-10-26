@@ -1,8 +1,8 @@
 package zaplog
 
 import (
-	"github.com/mark-libn/go-log/conf"
-	"github.com/mark-libn/go-log/fileout"
+	"go-log/conf"
+	"go-log/fileout"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"os"
